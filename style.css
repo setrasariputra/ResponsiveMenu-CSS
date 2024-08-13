@@ -1,0 +1,46 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+.topbar {
+    background-color: #1433d6;
+    height: 50px;
+    color: white;
+}
+.wrap {
+    max-width: 1200px;
+    height: 50px;
+    margin: auto;
+    background-color: red;
+}
+.grid-topbar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.sales-info {
+    background-color: green;
+    height: 50px;
+}
+.top-right-menu {
+    background-color: blueviolet;
+    height: 50px;
+}
+
+/* Tablet */
+@media (min-width: 450px) and (max-width: 767px) {
+    .wrap {
+        background-color: green;
+    }
+    .top-right-menu {
+        display: none;
+    }
+}
+/* Smartphone */
+@media (max-width: 449px) {
+    .wrap {
+        background-color: orange;
+    }
+    .topbar {
+        display: none;
+    }    
+}
